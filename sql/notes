@@ -1,13 +1,1 @@
-Some learnings I got while solving sql problems 
 
-where clause is evaluated before select statement. so its preffered to not to use alias name in where clause 
-
-The order of execution of SQL statements in a typical query follows a logical sequence. Here is the general order of execution:
-1. FROM: The FROM clause specifies the tables or views involved in the query. It establishes the data sources for the query.
-WHERE: The WHERE clause filters the rows from the tables specified in the FROM clause based on the specified conditions. It narrows down the result set.
-2.GROUP BY: The GROUP BY clause is used to group rows based on specific columns. It is often used with aggregate functions like COUNT, SUM, etc., to calculate summary values for each group.
-HAVING: The HAVING clause filters the grouped rows based on specified conditions. It is similar to the WHERE clause but operates on the grouped data.
-3.SELECT: The SELECT clause retrieves the specified columns or expressions from the filtered and grouped data. It produces the final result set.
-4.DISTINCT: The DISTINCT keyword removes duplicate rows from the result set, retaining only unique rows.
-ORDER BY: The ORDER BY clause sorts the result set based on specified columns or expressions. It arranges the rows in ascending (default) or descending order.
-5.LIMIT/OFFSET: The LIMIT clause (sometimes in combination with OFFSET) restricts the number of rows returned in the result set.
